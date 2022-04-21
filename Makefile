@@ -21,7 +21,7 @@ create:
 init:
 	pip install -U pip
 	pip install -U setuptools wheel
-	pip install Flask==2.0.2 Flask-Migrate==2.5.0 Flask-Script==2.0.5 Flask-SQLAlchemy==2.5.1
+	pip install Flask==2.0.2 Flask-Migrate==2.5.0 Flask-Script==2.0.5 Flask-SQLAlchemy==2.5.1 gunicorn==20.1.0
 
 #test:
 	# pipenv run yapf -irp flask-example tests
