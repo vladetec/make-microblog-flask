@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- fonte de ícones -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="icon" type="image/png" href="../static/assets/cubomagico.png" />
+    <title>MicroBlog</title>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <img class="logo" src="/static/assets/cubomagico.png" /> Microblog
+      </div>
+      <div class="menu">
+        <div class="menu-item">Citação</div>
+        <div class="menu-item">Calendario</div>
+      </div>
+    </header>
+
+    <div class="container">
+      <form method="POST">
+        <textarea name="content" placeholder="Insira sua citação"></textarea>
+        <button type="submit">
+          Enviar <span class="material-icons">send</span>
+        </button>
+      </form>
+
+      <div class="entries">
+        {% for entry in entries %}
+        <div class="entry">
+          <div class="entry-title">
+            {{ entry[0] | truncate(30, true) }}
+            <span class="entry-date">• {{ entry[1] }}</span>
+          </div>
+          <p class="entry-content">{{ entry[0] }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div align="left">
+          <img src="/static/assets/perfil.jpg" height="50" width="50" />
+        </div>
+        <div class="left">
+          <a class="footer-item">Criado Por Vlademir Souza</a>
+          <a class="footer-item">https://github.com/vladetec</a>
+        </div>
+        <div class="right">
+          <div class="footer-section">
+            <a class="footer-item">Citação</a>
+            <a class="footer-item">Calendario</a>
+          </div>
+          <div class="footer-section">
+            <a class="footer-item">Sobre</a>
+            <a class="footer-item">Por onde começar</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

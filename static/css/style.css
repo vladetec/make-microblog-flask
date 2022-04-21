@@ -1,0 +1,148 @@
+html {
+  font-family: Lato;
+}
+
+header {
+  max-width: 640px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 24px;
+}
+
+header .title {
+  display: flex;
+  align-items: center;
+}
+
+header .title img {
+  margin-right: 30px;
+}
+
+header .menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #5c6b70;
+}
+
+header .menu .menu-item {
+  margin-left: 50px;
+}
+
+.container {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+form textarea {
+  width: 100%;
+  font-family: Lato;
+  font-size: 18px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #f3f6f6;
+  margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+  background-color: #3cd0ff;
+  border: none;
+  font-size: 18px;
+  font-family: Lato;
+  font-weight: bold;
+  width: 140px;
+  padding: 5px 30px;
+  border-radius: 20px;
+  color: white;
+}
+
+form input[type="submit"]:hover {
+  background-color: #18b1e1;
+  cursor: pointer;
+}
+
+form button {
+  background-color: #3cd0ff;
+  font-size: 18px;
+  font-family: Lato;
+  font-weight: bold;
+  padding: 1px 30px;
+  border-radius: 20px;
+  color: #fff;
+  border: none;
+  height: 30px;
+  line-height: 30px;
+  width: 140px;
+  position: relative;
+  cursor: pointer;
+}
+span.material-icons {
+  font-size: 18px;
+  position: absolute;
+  right: 15px;
+  top: 6px;
+}
+
+.entry {
+  margin-top: 50px;
+}
+
+.entry-title {
+  font-size: 16px;
+}
+
+.entry-date {
+  color: #5c6b70;
+}
+
+.entry-content {
+  font-size: 14px;
+  line-height: 150%;
+}
+
+footer {
+  background-color: #323f43;
+  padding: 40px 0;
+  margin: 50px 0 0 0;
+  border-top: 4px solid black;
+  color: white;
+  font-size: 12px;
+}
+
+footer .footer-container {
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+footer .left {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .right {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+footer .footer-section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.footer-item {
+  margin-bottom: 5px;
+}
