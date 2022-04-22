@@ -16,13 +16,14 @@ help:
 
 create:
 	mkdir -p templates static
-	touch app.py database.py
+	touch app.py database.py 
 
 init:
 	pip install -U pip
 	pip install -U setuptools wheel
 	pip install Flask==2.0.2 Flask-Migrate==2.5.0 Flask-Script==2.0.5 Flask-SQLAlchemy==2.5.1 gunicorn==20.1.0
-
+	pip freeze > requirements.txt
+	touch Procfile # Para o heroku web: gunicorn app:app
 #test:
 	# pipenv run yapf -irp flask-example tests
 	# pipenv run flake8 --max-line-length=120 flask-example tests
