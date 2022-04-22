@@ -20,4 +20,23 @@ make serve
 
 ## Links
 
-[MicroBlog](http://localhost:5000/)
+[MicroBlog - Local](http://localhost:5000/)
+
+### COMO FAZER DEPLOY NO HEROKU
+
+1. Pré condiçaõ ter uma conta no Heroku e Heroku-CLI, instalado
+2. Rode o ambiente com os comandos.
+
+### NO TERMINAL
+
+```
+heroku login
+heroku create <nome_do_projeto> --buildpack heroku/python
+git push heroku main
+```
+
+#### OBS: adicione dentro do arquivo Procfile
+
+```
+web: gunicorn app:app
+```
